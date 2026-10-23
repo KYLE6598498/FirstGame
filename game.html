@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>SnikBinya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="game-page">
+
+    <h1 class="game-title">Snik-Binya</h1>
+
+    <div class="board-container">
+        <canvas id="board"></canvas>
+    </div>
+
+    <p class="mobile-hint">
+        Use the arrow buttons or swipe on the game board!
+    </p>
+
+    <div id="controls" aria-label="Game controls">
+        <button class="up" data-direction="up" aria-label="Move up">▲</button>
+        <div class="control-middle">
+            <button data-direction="left" aria-label="Move left">◀</button>
+            <button data-direction="down" aria-label="Move down">▼</button>
+            <button data-direction="right" aria-label="Move right">▶</button>
+        </div>
+    </div>
+
+    <div class="hidden" id="gameover">
+        <div class="box">
+            <h1 id="title">GAME OVER!👎</h1>
+            <button id="restart">Play Again!</button>
+        </div>
+    </div>
+
+    <div class="fade">
+        <img src="gg.webp" alt="Bye">
+    </div>
+
+    <div id="arrows" class="keyboard-hint">
+        <p>↑ Up · ↓ Down · ← Left · → Right</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
